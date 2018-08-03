@@ -1,0 +1,24 @@
+<mbsc-page theme="ios-dark" lang="en">
+    <mbsc-form [options]="formSettings">
+        <div class="mbsc-form-group">
+            <div class="mbsc-form-group-title">Sound settings</div>
+            <mbsc-slider [(value)]="slider1" icon='{ "left": "volume-mute2", "right": "volume-high" }'></mbsc-slider>
+            <mbsc-slider [(value)]="slider2" icon="alarm2" [disabled]="true"></mbsc-slider>
+            <mbsc-slider [(value)]="slider3" min="80" max="300" val="left" highlight="false" value-template="{value} lbs">Weight</mbsc-slider>
+            <mbsc-slider [(value)]="slider4" min="0" max="500" step="25" tooltip="true" step-labels="[0, 100, 200, 300, 400, 500]">Price</mbsc-slider>
+            <mbsc-slider [(value)]="slider5" min="0" max="100" step="25" step-labels="[0, 25, 50, 75, 100]">Steps</mbsc-slider>
+            <mbsc-slider [(value)]="slider6" min="0" max="3000" tooltip="true" step-labels="[0, 500, 1000, 1500, 2000, 2500, 3000]">Multiple</mbsc-slider>
+        </div>
+    
+        <div class="mbsc-form-group">
+            <div class="mbsc-form-group-title">Slider colors</div>
+            <mbsc-slider [(value)]="primary" color="primary" data-tooltip="true">Primary</mbsc-slider>
+            <mbsc-slider [(value)]="secondary" color="secondary" data-tooltip="true">Secondary</mbsc-slider>
+            <mbsc-slider [(value)]="success" color="success" data-tooltip="true">Success</mbsc-slider>
+            <mbsc-slider [(value)]="danger" color="danger" data-tooltip="true">Danger</mbsc-slider>
+            <mbsc-slider [(value)]="warning" color="warning" data-tooltip="true">Warning</mbsc-slider>
+            <mbsc-slider [(value)]="info" color="info" data-tooltip="true">Info</mbsc-slider>
+        </div>
+    
+    </mbsc-form>
+</mbsc-page>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slider</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {font-family: Arial,Helvetica,sans-serif;}
+    </style>
+    
+    <link rel="stylesheet" href="css/mobiscroll.angular.lite.min.css">
+
+    <!-- Polyfills -->
+    <script src="https://unpkg.com/core-js/client/shim.min.js"></script>
+
+    <script src="https://unpkg.com/zone.js@0.8.4?main=browser"></script>
+    <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('main.ts').catch(function(err){ console.error(err); });
+    </script>
+    
+    
+    
+    <style type="text/css">
+            body {
+        margin: 0;
+        padding: 0;
+    }
+
+        
+    </style>
+  </head>
+
+  <body>
+    <demo-app class="demo-app-cont">Loading AppComponent content here ...</demo-app>
+  </body>
+
+</html>
+
+
+<!-- 
+Copyright 2017 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
